@@ -24,7 +24,7 @@ const runScripts = async () => {
   try {
     await runSqlFile(path.join(__dirname, 'config', 'optimized_schema.sql'));
     await runSqlFile(path.join(__dirname, 'config', 'procedures_triggers.sql'));
-    await runSqlFile(path.join(__dirname, 'config', 'populate_data.sql'));
+    await runSqlFile(path.join(__dirname, 'config', 'performance_analysis.sql'));
   } finally {
     await pool.end();
   }
